@@ -1,0 +1,28 @@
+﻿# Godot project artifacts
+.export/
+.import/
+.godot/
+mono_crash.*
+
+# C# build outputs
+bin/
+obj/
+*.dll
+*.exe
+*.mdb
+*.pdb
+*.pidb
+*.userprefs
+*.csproj.user
+
+# IDE caches
+.vs/
+.idea/
+*.suo
+*.user
+*.DotSettings.user
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
