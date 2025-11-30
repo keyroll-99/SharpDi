@@ -44,3 +44,6 @@ SharpDi is a lightweight dependency injection helper for Godot C# projects. It p
 
 ## Contributing
 Issues and pull requests are welcome. Please open an issue describing the feature or bug before submitting a PR.
+
+## License
+SharpDi is distributed under the MIT License. See `LICENSE` for details.
