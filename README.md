@@ -1,5 +1,7 @@
 ﻿# SharpDi
 
+![SharpDi Logo](Logo-min.png)
+
 SharpDi is a lightweight dependency injection helper for Godot C# projects. It provides an easy way to register services once and inject them into nodes using a simple `[Inject]` attribute.
 
 ## Features
