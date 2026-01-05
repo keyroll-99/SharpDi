@@ -2,6 +2,7 @@ using Godot;
 
 #if TOOLS
 
+// ReSharper disable once CheckNamespace
 namespace SharpDi;
 
 [Tool]
