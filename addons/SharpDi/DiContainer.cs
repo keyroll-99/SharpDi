@@ -43,6 +43,17 @@ public partial class DiContainer : Node
         _services[type].Add(service);
     }
 
+    public static void Add<TBase, TImpl>(TImpl impl) where TImpl : TBase
+    {
+        var type = typeof(TBase);
+        if (!_services.ContainsKey(type))
+        {
+            _services[type] = new List<object>();
+        }
+
+        _services[type].Add(impl);
+    }
+
     public static void AddKeyed<T>(string key, T service)
     {
         var type = typeof(T);
@@ -52,6 +63,17 @@ public partial class DiContainer : Node
             _keyedServices[dictKey] = new List<object>();
         }
         _keyedServices[dictKey].Add(service);
+    }
+
+    public static void AddKeyed<TBase, TImpl>(string key, TImpl impl) where TImpl : TBase
+    {
+        var type = typeof(TBase);
+        var dictKey = (key, type);
+        if (!_keyedServices.ContainsKey(dictKey))
+        {
+            _keyedServices[dictKey] = new List<object>();
+        }
+        _keyedServices[dictKey].Add(impl);
     }
 
     public static T Get<T>()
